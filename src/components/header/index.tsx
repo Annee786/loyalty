@@ -21,9 +21,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
 colors:colors.header,
     fontSize: 16,
-    marginLeft: 10,
-    fontFamily:fonts.semiBold
+    fontFamily:fonts.bold,
+    paddingLeft:10
   },
+
   arrowimage: {
     resizeMode: 'contain',
     height: 20,
@@ -33,13 +34,14 @@ colors:colors.header,
 colors:colors.button,
     fontSize: 16,
     alignItems:'center',
-    paddingLeft:50,
-    fontFamily:fonts.bold
+    fontFamily:fonts.bold,
+    paddingLeft:60
   },
   container: {
-    paddingHorizontal: 10,
     flexDirection: 'row',
     alignItems: 'center',
     marginTop:10,
+    paddingHorizontal:20,
+
   },
 });

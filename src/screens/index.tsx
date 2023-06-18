@@ -13,6 +13,11 @@ export {default as ScanQRCode} from './scanQRcode';
 export {default as SearchScreen} from './searchScreen';
 export {default as SettingsScreen} from './settingsScreen';
 export {default as Profile} from './profile';
+export {default as MemberLogin} from './memberLogin';
+export {default as DashBoard} from './dashboard';
 
-
+export {default as Scan} from './scan';
+export {default as Points} from './points';
+export {default as Uploads} from './uploads';
+export {default as Offers} from './offers';
 

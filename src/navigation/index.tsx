@@ -18,6 +18,15 @@ import SearchScreen from '../screens/searchScreen';
 import SignUpDetails from '../screens/signupDetails';
 import SettingsScreen from '../screens/settingsScreen';
 import Profile from '../screens/profile';
+import MemberLogin from '../screens/memberLogin';
+import DashBoard from '../screens/dashboard';
+import Scan from '../screens/scan';
+import Points from '../screens/points';
+import Uploads from '../screens/uploads';
+import Offers from '../screens/offers';
+
+
+
 const Stack = createNativeStackNavigator();
 
 function App() {
@@ -27,7 +36,7 @@ function App() {
         screenOptions={{
           headerShown: false,
         }}
-        initialRouteName="HomeScreen">
+        initialRouteName="DashBoard">
         <Stack.Screen name="Splash" component={Splash} />
         <Stack.Screen name="GetStarted" component={GetStarted} />
         <Stack.Screen name="SignUpDetails" component={SignUpDetails} />
@@ -43,6 +52,13 @@ function App() {
         <Stack.Screen name="LoyaltyPoints" component={LoyaltyPoints} />
         <Stack.Screen name="SettingsScreen" component={SettingsScreen} />
         <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="MemberLogin" component={MemberLogin} />
+        <Stack.Screen name="DashBoard" component={DashBoard} />
+        <Stack.Screen name="Scan" component={Scan} />
+        <Stack.Screen name="Points" component={Points} />
+        <Stack.Screen name="Uploads" component={Uploads} />
+        <Stack.Screen name="Offers" component={Offers} />
+
 
 
       </Stack.Navigator>

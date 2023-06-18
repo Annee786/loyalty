@@ -1,21 +1,20 @@
 import React from 'react';
-import {View, Text, ScrollView, Image} from 'react-native';
+import {View, Text, Image, ScrollView} from 'react-native';
 import styles from './styles';
 import images from '../../utils/images';
 import Header from '../../components/header';
 import Button from '../../components/button';
-import MainHeading from '../../components/mainHeading';
 import InputButton from '../../components/inputButton';
+import MainHeading from '../../components/mainHeading';
 import HeadingText from '../../components/headingText';
-
-const SignIn = ({navigation,onPress}) => {
-  return (
-    <View>
-      <ScrollView>
-        <View style={styles.pageView}>
-          <Header heading="Sign In" subheading="Creat an Account" />
-        </View>
-        <Image style={styles.mobilloginimage} source={images.MobileLoginpana} />
+const MemberLogin = ({navigation,onPress}) => {
+    return (
+      <View>
+        <ScrollView>
+          <View style={styles.pageView}>
+            <Header heading="Sign In"/>
+          </View>
+            <Image style={styles.mobilloginimage} source={images.MobileLoginimage} />
         <View style={styles.box}>
           <MainHeading heading="Welcome Back" />
           <HeadingText heading="Enter your Email address and password to login and continue our app." />
@@ -38,13 +37,14 @@ const SignIn = ({navigation,onPress}) => {
         </View>
         <View>
           <Button
-            onPress={() => navigation.navigate('LocationScreen')}
+            onPress={() => navigation.navigate('DashBoard')}
             heading="Log In"
           />
-        </View>
-      </ScrollView>
+      
+            </View>
+    </ScrollView>
     </View>
   );
 };
 
-export default SignIn;
+export default MemberLogin;

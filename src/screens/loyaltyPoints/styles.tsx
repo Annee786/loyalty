@@ -5,9 +5,10 @@ export default StyleSheet.create({
   loyaltypointsView: {
     flex: 1,
     backgroundColor: colors.backgroundColor,
+    paddingHorizontal: 20,
   },
   pointsCard: {
-    height: 160,
+    height: 150,
     width: '90%',
     backgroundColor: colors.button,
     borderRadius: 20,
@@ -36,7 +37,6 @@ export default StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginTop: 10,
-    paddingHorizontal: 10,
   },
   monthView: {
     marginTop: 10,
@@ -65,18 +65,21 @@ export default StyleSheet.create({
     fontSize: 14,
     fontFamily: fonts.medium,
     colors: colors.header,
+    marginTop: 10,
+    marginLeft: 10,
   },
 
-  historyPointsView:{},
+  historyPointsView: {},
   resturantsView: {
     height: 70,
-    width: '80%',
+    width: '90%',
     marginTop: 20,
-    paddingLeft: 10,
+
+    borderBottomWidth: 1,
+    borderBottomColor: colors.lineprofile,
   },
 
   ImageView: {
-    paddingLeft: 10,
     flexDirection: 'row',
   },
 
@@ -95,21 +98,13 @@ export default StyleSheet.create({
     colors: colors.darkGrey,
     fontFamily: fonts.light,
     fontSize: 10,
-    paddingLeft: 40,
+    paddingLeft: 30,
   },
-  lineView: {
-    height: 1,
-    width: '100%',
-    paddingHorizontal: 10,
-    borderColor:colors.lineColor,
-    borderWidth: 1,
-    marginTop: 10,
-  },
-totalpoints:{
-  justifyContent:'space-between',
-  fontSize:14,
-  colors:colors.button,
-  alignSelf:'flex-end',
 
-}
+  totalpoints: {
+    fontSize: 14,
+    colors: colors.button,
+    alignSelf: 'flex-end',
+
+  },
 });

@@ -6,6 +6,54 @@ import Header from '../../components/header';
 import Button from '../../components/button';
 
 const LoyaltyPoints = ({navigation}) => {
+  const resturantpoints=[
+    {
+      image:images.AljadeedLogo,
+      name:'Burger King',
+      type:'Date : 8 March , 2023',
+points:'+ 150 Points',
+      route:''
+    }, {
+      image:images.AljadeedLogo,
+      name:'Al Jadeed Super market',
+      type:'Date : 8 March , 2023',
+      points:'+ 233 Points',
+      route:''
+    }, {
+      image:images.AljadeedLogo,
+      name:'Walmart',
+      type:'Date : 8 March , 2023',
+points:'+ 98 Points',
+      route:''
+    }, {
+      image:images.AljadeedLogo,
+      name:'Walmart',
+      type:'Date : 8 March , 2023',
+points:'+ 561 Points',
+      route:''
+    }, {
+      image:images.AljadeedLogo,
+      name:'Dunkin Donut',
+      type:'Date : 8 March , 2023',
+points:'+ 112 Points',
+      route:''
+    }, {
+      image:images.AljadeedLogo,
+      name:'Madinah Market',
+      type:'Date : 8 March , 2023',
+points:'+ 100 Points',
+      route:''
+    }, {
+      image:images.AljadeedLogo,
+      name:'Starbucks',
+      type:'Date : 8 March , 2023',
+points:'+ 200 Points',
+      route:''
+    }, 
+     
+  ]
+
+
   return (
     <View style={styles.loyaltypointsView}>
       <Header heading="Loyalty Points" />
@@ -25,17 +73,22 @@ const LoyaltyPoints = ({navigation}) => {
           </View>
         </View>
       </View>
+
+      {resturantpoints.map((item)=>{
+        return(
 <View style={styles.resturantsView}>
           <View style={styles.ImageView}>
-            <Image style={styles.mappinImage} source={images.MapPin} />
-            <Text style={styles.subtext}>Burger King</Text>
+            <Image style={styles.mappinImage} source={item.image} />
+            <Text style={styles.subtext}>{item.name}</Text>
           </View>
           <Text style={styles.dateHistory}>
-          Date : 8 March , 2023
+         {item.type}
           </Text>
-          <Text style={styles.totalpoints}>+ 150 Points</Text>
-          <View style={styles.lineView} />
+          <Text style={styles.totalpoints}>{item.points}</Text>
         </View>
+
+)
+})}
         <Button
           onPress={() => navigation.navigate('Favorites')}
           heading="Redeem points"

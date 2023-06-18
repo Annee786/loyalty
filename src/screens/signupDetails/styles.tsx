@@ -15,7 +15,7 @@ secureloginimage:{
   box: {
     height: 450,
     width: '85%',
-    borderColor: 'grey',
+    borderColor:colors.white,
     borderRadius: 20,
     borderWidth: 1,
     alignSelf: 'center',

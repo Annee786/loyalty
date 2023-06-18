@@ -9,7 +9,7 @@ import HeadingText from '../../components/headingText';
 import InputButton from '../../components/inputButton';
 
 
-const SignupPassword = ({navigation}) => {
+const SignupPassword = ({navigation,onPress}) => {
   return (
     <View style={styles.passwordAcountView}>
       <ScrollView>

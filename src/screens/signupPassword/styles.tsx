@@ -16,6 +16,7 @@ secureloginimage:{
     height: 450,
     width: '85%',
     borderColor:colors.grey,
+    backgroundColor:colors.white,
     borderRadius: 20,
     borderWidth: 1,
     alignSelf: 'center',

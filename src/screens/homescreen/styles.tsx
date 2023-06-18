@@ -94,6 +94,7 @@ export default StyleSheet.create({
   resturants: {
     flexDirection: 'column',
     borderColor: colors.white,
+    marginBottom:20,
     borderWidth: 1,
     height: 150,
     width: '50%',

@@ -9,12 +9,12 @@ import HeadingText from '../../components/headingText';
 import InputButton from '../../components/inputButton';
 
 
-const SignUpDetails = ({navigation}) => {
+const SignUpDetails = ({navigation,onPress}) => {
   return (
     <View style={styles.passwordAcountView}>
       <ScrollView>
         <Header heading="Create your Account" subheading="Sign In" />
-        <Image style={styles.secureloginimage} source={images.SecureLogin} />
+        <Image style={styles.secureloginimage} source={images.MobileLoginimage} />
         <View style={styles.box}>
           <MainHeading heading="Add your Personal Details" />
           <HeadingText heading="Enter your details in order to directly contact and help to find you." />

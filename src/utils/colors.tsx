@@ -16,7 +16,9 @@ lightblack:'#263238',
 lineColor:'#F3F0F0',
 darkLine:'#C7C9D9',
 lightblue:'#979797',
-lineprofile:'#DADADA'
+lineprofile:'#DADADA',
+boxcolor:'#ECF2FA',
+pointstextcolor:'#898A8D'
 
 
 };
